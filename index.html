@@ -34,15 +34,62 @@
 </div>
 <!--===== PRELOADER ENDS =======-->
 
-<!--===== PROGRESS STARTS=======-->
+<!--===== PROGRESS STARTS =======-->
 <div class="paginacontainer">
-     <div class="progress-wrap">
-       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-       </svg>
-     </div>
-   </div>
- <!--===== PROGRESS ENDS=======-->
+  <!-- Scroll Progress Button -->
+  <div class="progress-wrap right-progress">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918606334410" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+</div>
+<!--===== PROGRESS ENDS =======-->
+
+<style>
+/* Move Progress Button to Right */
+.progress-wrap.right-progress {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 998;
+  cursor: pointer;
+}
+
+/* WhatsApp Floating Button - Above Progress */
+.whatsapp-float {
+  position: fixed;
+  bottom: 90px; /* keeps above progress */
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 12px; /* square with soft corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.1);
+}
+</style>
+
 
    <!--=====HEADER START=======-->
    <header>
@@ -60,8 +107,7 @@
                     <li class="nav-item"><a href="#home" class="nav-link active"><span>Home</span></a></li>
                     <li class="nav-item"><a href="#about" class="nav-link"><span>About</span></a></li>
                     <li class="nav-item"><a href="#service" class="nav-link"><span>Services</span></a></li>
-                    <li class="nav-item"><a href="#solution" class="nav-link"><span>Solution</span></a></li>
-                    <li class="nav-item"><a href="#pricing" class="nav-link"><span>Pricing</span></a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link"><span>Courses</span></a></li>
                     <li class="nav-item"><a href="#blog" class="nav-link"><span>Blogs</span></a></li>
                 </ul>
               </div>
@@ -109,8 +155,7 @@
       <li class="nav-item"><a href="#home" class="nav-link active"><span>Home</span></a></li>
                     <li class="nav-item"><a href="#about" class="nav-link"><span>About</span></a></li>
                     <li class="nav-item"><a href="#service" class="nav-link"><span>Services</span></a></li>
-                    <li class="nav-item"><a href="#solution" class="nav-link"><span>Solution</span></a></li>
-                    <li class="nav-item"><a href="#pricing" class="nav-link"><span>Pricing</span></a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link"><span>Courses</span></a></li>
                     <li class="nav-item"><a href="#blog" class="nav-link"><span>Blogs</span></a></li>
                 
     </ul>
@@ -125,7 +170,7 @@
               <i class="fa-solid fa-phone-volume"></i>
             </div>
             <div class="contact-info-text">
-              <a href="tel:+3(924)4596512">+3(924)4596512</a>
+              <a href="tel:+91 8606334410">+91 86063 34410</a>
             </div>
           </div>
 
@@ -134,10 +179,10 @@
               <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="contact-info-text">
-              <a href="mailto:info@example.com">info@example.com</a>
+              <a href="mailto:clublingacademy@gmail.com">clublingacademy@gmail.com</a>
             </div>
           </div>
-
+<!--
           <div class="single-footer">
             <h3>Our Location</h3>
             
@@ -151,6 +196,7 @@
             </div>
 
           </div>
+        -->
           <div class="single-footer">
             <h3>Social Links</h3>
             
@@ -241,7 +287,7 @@
               <div class="img1">
                 <img src="assets/img/all-images/about-img7.png" alt="A teacher helping a student in a classroom setting.">
                 <div class="counter-area">
-                  <h2><span class="counter">850</span>+</h2>
+                  <h2><span class="counter">450</span>+</h2>
                   <p>Students Empowered</p>
                 </div>
               </div>
@@ -263,7 +309,7 @@
             <div class="col-lg-12 col-md-6 col-6">
               <div class="counter-box" data-aos="zoom-out" data-aos-duration="800">
                 <h2><span class="counter">40</span>+</h2>
-                <p>Training Modules</p>
+                <p>Sessions</p>
               </div>
             </div>
 
@@ -283,8 +329,8 @@
 
             <div class="col-lg-12 col-md-6 col-6">
               <div class="counter-box" data-aos="zoom-out" data-aos-duration="1200">
-                <h2><span class="counter">20</span>+</h2>
-                <p>Certified Trainers</p>
+                <h2><span class="counter">50</span>+</h2>
+                <p>Modules</p>
               </div>
             </div>
           </div>
@@ -479,14 +525,13 @@
   </div>
 </div>
 <!--===== WORK AREA ENDS =======-->
-
 <!--===== PRICING AREA STARTS =======-->
 <div class="pricing7-section-area sp2" id="pricing">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 m-auto">
                 <div class="pricing-header heading12 text-center">
-                    <h5 data-aos="fade-up" data-aos-duration="1000">Our Programs & Pricing</h5>
+                    <h5 data-aos="fade-up" data-aos-duration="1000">Our Courses</h5>
                     <h2 class="text-anime-style-3">Find the Right Path to Fluency for You</h2>
                 </div>
             </div>
@@ -498,7 +543,6 @@
                 <div class="pricing-boxarea">
                     <h4>General English</h4>
                     <p>Perfect for students & beginners focusing on everyday fluency.</p>
-                    <h1>₹4,000 <span>/person</span></h1>
                     <div class="space32"></div>
                     <div class="btn-area1">
                         <a href="general-english.html" class="header-btn13">Choose Plan <i class="fa-solid fa-arrow-right"></i></a>
@@ -519,7 +563,6 @@
                 <div class="pricing-boxarea active">
                     <h4>Business English</h4>
                     <p>Designed for professionals to master workplace fluency.</p>
-                    <h1>₹6,000 <span>/person</span></h1>
                     <div class="space32"></div>
                     <div class="btn-area1">
                         <a href="business-english.html" class="header-btn13">Choose Plan <i class="fa-solid fa-arrow-right"></i></a>
@@ -540,7 +583,6 @@
                 <div class="pricing-boxarea">
                     <h4>English For Teachers</h4>
                     <p>Enhance your classroom English & academic writing.</p>
-                    <h1>₹6,000 <span>/person</span></h1>
                     <div class="space32"></div>
                     <div class="btn-area1">
                         <a href="english-for-teachers.html" class="header-btn13">Choose Plan <i class="fa-solid fa-arrow-right"></i></a>
@@ -563,7 +605,6 @@
                 <div class="pricing-boxarea">
                     <h4>Residential Camp</h4>
                     <p>An intensive 7-day immersion for full-time English practice.</p>
-                    <h1>₹14,000 <span>(All-Inclusive)</span></h1>
                     <div class="space32"></div>
                     <div class="btn-area1">
                         <a href="residential-camp.html" class="header-btn13">Learn More <i class="fa-solid fa-arrow-right"></i></a>
@@ -577,8 +618,6 @@
                             <li><img src="assets/img/icons/check9.svg" alt="Checkmark icon" class="check9">Peer Networking & Lifelong Support</li>
                         </ul>
                     </div>
-                    <div class="space24"></div>
-                    <p class="pera">**Early Bird Offer:** ₹10,000 (Limited Seats)</p>
                 </div>
             </div>
 
@@ -586,7 +625,6 @@
                 <div class="pricing-boxarea">
                     <h4>On-Site Training</h4>
                     <p>Flexible and customized training delivered at your location.</p>
-                    <h1 class="text-nowrap">Flexible Pricing</h1>
                     <div class="space32"></div>
                     <div class="btn-area1">
                         <a href="contact.html" class="header-btn13">Request a Quote <i class="fa-solid fa-arrow-right"></i></a>
@@ -600,14 +638,13 @@
                             <li><img src="assets/img/icons/check9.svg" alt="Checkmark icon" class="check9">Custom AI Modules for Teams</li>
                         </ul>
                     </div>
-                    <div class="space24"></div>
-                    <p class="pera">**Short-Term:** ₹5,000/day | **Long-Term:** ₹2,500/day</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!--===== PRICING AREA ENDS =======-->
+
 
 <!--===== BOOST AREA STARTS =======-->
 <div class="boost-section-area sp1">
@@ -633,6 +670,81 @@
   </div>
 </div>
 <!--===== BOOST AREA ENDS =======-->
+
+<!--===== SERVICE AREA STARTS =======-->
+<div class="service7-section-area " id="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 m-auto"><br><br>
+        <div class="service-header text-center heading12">
+         </div>
+      </div>
+    </div>
+<!--===== TEAM AREA STARTS =======-->
+<!--===== TEAM AREA STARTS =======-->
+<div class="team-inner-section-area">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="team-boxarea">
+          <div class="img1">
+            <img src="assets/img/all-images/team-img1.png" alt="Yaseen Bin Shihab - Founder & CEO">
+          </div>
+          <ul>
+            <li><a href="#"><img src="assets/img/icons/facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="assets/img/icons/instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt="LinkedIn"></a></li>
+          </ul>
+          <div class="content">
+            <a href="team.html">Yaseen Bin Shihab</a>
+            <p>Founder & CEO</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="team-boxarea">
+          <div class="img1">
+            <img src="assets/img/all-images/team-img2.png" alt="Dr Abul Latheef V - Associate Professor & ELT Expert">
+          </div>
+          <ul>
+            <li><a href="#"><img src="assets/img/icons/facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="assets/img/icons/instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt="LinkedIn"></a></li>
+          </ul>
+          <div class="content">
+            <a href="team.html">Dr Abul Latheef V</a>
+            <p><b>Academic advisor </b><br> (Training & Content Development)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="team-boxarea">
+          <div class="img1">
+            <img src="assets/img/all-images/team-img3.png" alt="Shihab Vilayil - Senior Business Consultant & Corporate Trainer">
+          </div>
+          <ul>
+            <li><a href="#"><img src="assets/img/icons/facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="assets/img/icons/instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt="LinkedIn"></a></li>
+          </ul>
+          <div class="content">
+            <a href="team.html">Shihab Vilayil</a>
+            <p>Senior Business Consultant & Corporate Trainer</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--===== TEAM AREA ENDS =======-->
+
+
+       
+
 
 
 
@@ -794,33 +906,25 @@
             <h3>Get in touch</h3>
             <ul>
               <li><a href="mailto:clublingacademy@gmail.com"><img src="assets/img/icons/email.svg" alt="Email icon"><span>clublingacademy@gmail.com</span></a></li>
-              <li><a href="tel:+919633717347"><img src="assets/img/icons/phone.svg" alt="Phone icon"><span>+91 9633717347</span></a></li>
-              <li><a href="#"><img src="assets/img/icons/location.svg" alt="Location icon"><span>1st Floor, A Block, <br class="d-lg-block d-none"> Nambiar Towers, <br class="d-lg-block d-none"> Palarivattom, Kochi</span></a></li>
+              <li><a href="tel:+918606334410"><img src="assets/img/icons/phone.svg" alt="Phone icon"><span>+91 86063 34410</span></a></li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="footer-logo-area3">
-            <h3>Subscribe Our Newsletter</h3>
-            <form action="#">
-              <input type="email" placeholder="Enter Your email">
-              <button class="header-btn13"> Subscribe</button>
-            </form>
-          </div>
-        </div>
+       
       </div>
       <div class="space80 d-lg-block d-none"></div>
       <div class="space40 d-lg-none d-block"></div>
       <div class="row">
         <div class="col-lg-12">
           <div class="copyright-area">
-            <div class="pera">
-              <p>ⓒ Copyright 2024 ClubLing Academy. All rights reserved.</p>
-            </div>
-            <ul>
-              <li><a href="#">Terms & Conditions | Privacy Policy</a></li>
-            </ul>
-          </div>
+  <div class="pera">
+    <p>ⓒ Copyright 2025 ClubLing Academy. All rights reserved. | Developed by <a href="https://adscroll360.com" target="_blank">AdScroll360</a>.</p>
+  </div>
+  <ul>
+    <li><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></li>
+  </ul>
+</div>
+
         </div>
       </div>
     </div>
